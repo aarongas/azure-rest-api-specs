@@ -28,7 +28,7 @@ These are the global settings for the ApplicationInsights API.
 title: ApplicationInsightsManagementClient
 description: Composite Swagger for Application Insights Management Client
 openapi-type: arm
-tag: package-preview-2020-06
+tag: package-preview-2020-07
 ```
 
 ## Suppression
@@ -238,11 +238,32 @@ directive:
     reason: There are a bug in this rule. "ExportConfigurations_Create" is a valid operation id.
 ```
 
+
+### Tag: package-preview-2020-07
+
+These settings apply only when `--tag=package-preview-2020-07` is specified on the command line.
+
+```yaml $(tag) == 'package-preview-2020-07'
+input-file:
+  - Microsoft.Insights/preview/2020-07-15/aiOperations_API.json
+  - Microsoft.Insights/preview/2020-07-15/analyticsItems_API.json
+  - Microsoft.Insights/preview/2020-07-15/componentAnnotations_API.json
+  - Microsoft.Insights/preview/2020-07-15/componentApiKeys_API.json
+  - Microsoft.Insights/preview/2020-07-15/componentContinuousExport_API.json
+  - Microsoft.Insights/preview/2020-07-15/componentFeaturesAndPricing_API.json
+  - Microsoft.Insights/preview/2020-07-15/componentProactiveDetection_API.json
+  - Microsoft.Insights/preview/2020-07-15/componentWorkItemConfigs_API.json
+  - Microsoft.Insights/preview/2020-07-15/components_API.json
+  - Microsoft.Insights/preview/2020-07-15/favorites_API.json
+  - Microsoft.Insights/preview/2020-07-15/webTestLocations_API.json
+  - Microsoft.Insights/preview/2020-07-15/webTests_API.json
+  - Microsoft.Insights/preview/2020-07-15/workbooks_API.json
+```
 ### Tag: package-preview-2020-06-only
 
 These settings apply only when `--tag=package-preview-2020-06-only` is specified on the command line.
 
-```yaml $(tag) == 'package-preview-2020-06-only'
+``` yaml $(tag) == 'package-preview-2020-06-only'
 input-file:
   - Microsoft.Insights/preview/2020-06-02-preview/livetoken_API.json
 ```
@@ -251,7 +272,7 @@ input-file:
 
 These settings apply only when `--tag=package-preview-2020-06` is specified on the command line.
 
-```yaml $(tag) == 'package-preview-2020-06'
+``` yaml $(tag) == 'package-preview-2020-06'
 input-file:
   - Microsoft.Insights/stable/2015-05-01/aiOperations_API.json
   - Microsoft.Insights/stable/2015-05-01/componentAnnotations_API.json
@@ -274,10 +295,11 @@ input-file:
 
 These settings apply only when `--tag=package-preview-2020-02` is specified on the command line.
 
-```yaml $(tag) == 'package-preview-2020-02'
+``` yaml $(tag) == 'package-preview-2020-02'
 input-file:
   - Microsoft.Insights/preview/2020-02-10-preview/WebTestResults_API.json
 ```
+
 ### Tag: package-2015-05
 
 These settings apply only when `--tag=package-2015-05` is specified on the command line.
